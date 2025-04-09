@@ -3,33 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegis</title>
+    <title>aegis - Coques haut de gamme pour ordinateurs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="announcement-bar">
-        🚀 Livraison offerte dès 50€ d'achat ! Profitez-en maintenant ! 🎉  
-    </div>
-
+    <!-- En-tête du site -->
     <header class="header">
         <div>
-            <a href="#"><img class="logo"src="Logo_Aegis_Noir.svg"alt="logo"></a>
+            <a href="#"><img class="logo" src="Logo_Aegis_Noir.svg" alt="logo"></a>
         </div>
 
-        <nav class="nav">
+        <nav class="header-nav">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Boutique</a></li>
-                <li><a href="#">Promotions</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Appareils</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Héritage</a></li>
+                <li><a href="#">À propos</a></li>
             </ul>
         </nav>
 
         <div class="cta-icons">
-            <a href="#" class="icon"><i class="fas fa-search"></i></a>
-            <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            <a href="#" class="icon"><img src="./src/icons/fas fa-shopping-cart.svg" alt=""></a>
+            <a href="#" class="icon"><img src="./src/icons/fas fa-user.svg" alt=""></a>
+            <a href="#" class="icon"><img src="./src/icons/fas fa-search.svg" alt=""></a>
         </div>
     </header>
 
+    <!-- Section héro -->
+    <section class="hero">
+        <h2>Coques haut de gamme pour ordinateurs portables.</h2>
+        <h1>L'ÉLÉGANCE PROTECTRICE.<br>L'EXCLUSIVITÉ EN ÉDITION LIMITÉE.</h1>
+        <a href="#" class="hero-button">Découvrir</a>
+    </section>
+
+    <!-- Section collections -->
+    <section class="collections">
+        <h2>EXPLOREZ NOS COLLECTIONS</h2>
+        <p>trouvez la coque qui reflète votre style</p>
+        
+        <div class="collection-grid">
+            <a href="" class="collection-item">
+                <h3>Collection Standard</h3>
+                <p>sobre et intemporelle</p>
+                <button class="collection-button">Voir</button>
+            </a>
+            <a href="" class="collection-item">
+                <h3>Collection Artistique</h3>
+                <p>collaborations en édition limitée</p>
+                <button class="collection-button">Voir</button>
+            </a>
+            <a href="" class="collection-item">
+                <p>Gravures personnalisables*</p>
+                <h3>Collection Heritage</h3>
+                <p>exclusivité et savoir-faire</p>
+                <button class="collection-button">Voir</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section signature -->
+    <section class="signature">
+        <h2>BIEN PLUS QU'UNE COQUE, UNE SIGNATURE.</h2>
+        <p>Fabriquées à la main en France, nos coques pour ordinateurs portables combinent design exceptionnel et fonction pour protéger vos modèles coûteux avec style et sublimer votre ordinateur. Protection exclusive et matériaux premium sont au cœur de nos collections.</p>
+    </section>
+
+    <!-- Section fixation -->
+    <section class="fixation">
+        <div style="width: 50%;">
+                <h3>Une fixation magnétique unique</h3>
+            <p>Grâce à un système d'aimants intégrés, nos coques s'adaptent parfaitement à votre ordinateur. Une solution à la fois élégante et pratique.</p>
+        </div>
+        <div class="fixation-images blocimg-hauteur">
+            <div class="fixation-image"></div>
+        </div>
+    </section>
+
+    <!-- Section matériaux -->
+    <section class="materiaux">
+        <div class="materiaux-images blocimg-hauteur">
+            <div class="materiaux-image"></div>
+            <div class="materiaux-image"></div>
+        </div>
+        <div class="materiaux-details">
+            <h2>Matériaux premium</h2>
+            <h4>Nubuck Standard & Collaborations</h4>
+            <p>Fabriqué en protéines naturelles durables, ces coques offrent une résistance supérieure aux taches, à l'eau et à l'usure. Chaque motif est soigneusement imprimé pour une finition haute-qualité.</p>
+            
+            <h4>Nubuck Haut de gamme</h4>
+            <p>D'apparence luxueuse, notre finition haut de gamme offre une protection alvéolaire et structurelle. Chaque coque est faite à la main par nos artisans pour garantir une protection élégante et fonctionnelle.</p>
+        </div>
+    </section>
+
+    <!-- Section vidéo -->
+    <section class="video">
+        <h2>UNE FABRICATION D'EXCEPTION</h2>
+        <p>Derrière chaque coque, un savoir-faire unique. Découvrez en vidéo l'artisanat et les matériaux qui font d'aegis une référence en matière de protection haut de gamme.</p>
+        <div class="video-player">
+            <button class="play-button" aria-label="Regarder la vidéo"></button>
+        </div>
+        <a href="#" class="video-link">En savoir plus</a>
+    </section>
+
+    <!-- Section produits -->
+    <section class="produits">
+        <div class="tabs">
+            <button class="tab active">Meilleurs ventes</button>
+            <button class="tab">Nouveautés</button>
+        </div>
+        
+        <div class="produits-grid">
+            <div class="produit-card">
+                <div class="produit-image"></div>
+                <h3>Nom du produit</h3>
+                <div class="rating">★★★★★</div>
+                <p class="prix">49,99 €</p>
+            </div>
+            <div class="produit-card">
+                <div class="produit-image"></div>
+                <h3>Nom du produit</h3>
+                <div class="rating">★★★★☆</div>
+                <p class="prix">59,99 €</p>
+            </div>
+            <div class="produit-card">
+                <div class="produit-image"></div>
+                <h3>Nom du produit</h3>
+                <div class="rating">★★★★★</div>
+                <p class="prix">69,99 € TTC</p>
+            </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <button class="prev-button" aria-label="Produit précédent"></button>
+            <button class="next-button" aria-label="Produit suivant"></button>
+        </div>
+    </section>
+
+    <!-- Section communauté -->
+    <section class="communaute">
+        <h2>REJOINS LA COMMUNAUTÉ</h2>
+        <p>pour découvrir les prochaines collaborations en avant-première.</p>
+        <div class="instagram">
+            <span class="insta-icon">IG</span>
+            <a href="#" class="insta-link">@aegis</a>
+        </div>
+        <div class="instagram-grid">
+            <div class="insta-image"></div>
+            <div class="insta-image"></div>
+            <div class="insta-image"></div>
+            <div class="insta-image"></div>
+            <div class="insta-image"></div>
+        </div>
+    </section>
+
+    <!-- Section avantages -->
+    <section class="avantages">
+        <div class="avantage">
+            <i class="icon-shipping"></i>
+            <h4>LIVRAISON GRATUITE</h4>
+        </div>
+        <div class="avantage">
+            <i class="icon-returns"></i>
+            <h4>PAIEMENT SÉCURISÉ</h4>
+        </div>
+        <div class="avantage">
+            <i class="icon-quality"></i>
+            <h4>QUALITÉ PREMIUM</h4>
+        </div>
+        <div class="avantage">
+            <i class="icon-service"></i>
+            <h4>GARANTIE 2 ANS</h4>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h4>À propos de nous</h4>
+                <ul>
+                    <li><a href="#">Notre histoire</a></li>
+                    <li><a href="#">Collaborations Exclusives</a></li>
+                    <li><a href="#">Politique & valeurs</a></li>
+                    <li><a href="#">Responsabilité sociale</a></li>
+                    <li><a href="#">Engagement qualité</a></li>
+                    <li><a href="#">Fabrication en Europe</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support produit</a></li>
+                    <li><a href="#">Livraison</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">Suivre ma commande</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Mentions légales</h4>
+                <ul>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Confidentialité des données</a></li>
+                    <li><a href="#">Informations légales</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Propriété intellectuelle</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>S'inscrire à notre Newsletter</h4>
+                <p>Saisissez votre e-mail</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email">
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="language-selector">
+                <img src="fr-flag.png" alt="Drapeau français">
+                <span>France</span>
+            </div>
+            <div class="copyright">
+                Copyright © 2024 Aegis by Aire. Tous droits réservés.
+            </div>
+            <div class="payment-methods">
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="Mastercard">
+                <img src="paypal.png" alt="PayPal">
+                <img src="apple-pay.png" alt="Apple Pay">
+                <img src="american-express.png" alt="American Express">
+            </div>
+        </div>
+    </footer>
 </body>
+</html>
